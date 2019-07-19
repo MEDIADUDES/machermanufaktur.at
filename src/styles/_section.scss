@@ -18,6 +18,10 @@ $section-top-bottom-padding: rem-calc(40);
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			&__inner {
+				width: 100%;
+			}
 		}
 	}
 
