@@ -48,6 +48,17 @@
 		"function-url-quotes": "always",
 		"no-descending-specificity": null,
 		"color-named": "never",
-		"max-nesting-depth": 10
+		"max-nesting-depth": 10,
+		"order/order": [
+			{
+				"type": "at-rule",
+				"hasBlock": false
+			},
+			"dollar-variables",
+			"at-variables",
+			"custom-properties",
+			"declarations",
+			"rules"
+		]
 	}
 }
