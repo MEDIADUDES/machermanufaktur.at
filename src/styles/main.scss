@@ -42,6 +42,13 @@
 .dark {
 	color: $white;
 	background-color: $blue;
+
+	a {
+		&,
+		&:hover {
+			color: $white;
+		}
+	}
 }
 
 .intro.intro.intro,
@@ -72,8 +79,7 @@
 	justify-content: center;
 	flex-wrap: wrap;
 
-	&__mail,
-	&__phone {
+	&__item {
 		position: relative;
 		font-size: rem-calc(22);
 		display: block;
@@ -84,9 +90,15 @@
 			display: block;
 			position: absolute;
 			bottom: -6px;
-			height: 3px;
-			background: $white;
+			height: 2px;
+			background: $blue;
 			width: 100%;
+
+			.dark & {
+				background: $white;
+			}
 		}
 	}
 }
+
+@import 'brand';

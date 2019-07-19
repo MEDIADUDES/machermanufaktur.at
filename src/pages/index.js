@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import Page from '../components/Page';
 
 import MAMALogo from '../assets/logo-wide.svg';
+import MMLogo from '../assets/mutmacher-logo.svg';
+import HMLogo from '../assets/heldenmacher-logo.svg';
 
 const index = ({ data }) => {
 	return (
@@ -39,14 +41,73 @@ const index = ({ data }) => {
 						<br />
 						<div className="contact">
 							<a
-								className="contact__mail"
+								className="contact__item"
 								href="mailto:office@machermanufaktur.at"
 							>
 								office@machermanufaktur.at
 							</a>
-							<a className="contact__phone" href="tel:004369919831028">
+							<a className="contact__item" href="tel:004369919831028">
 								+43 699 19831028
 							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="[ section  section--full section--splitted ] brands">
+				<div className="cell dark">
+					<div className="brand">
+						<div className="brand__inner">
+							<h2 className="brand__heading">
+								<img
+									className="brand__heading-logo"
+									src={HMLogo}
+									alt="Heldenmacher Logo"
+								/>
+							</h2>
+							<p className="brand__content">
+								Die Heldenmacher sind deine Experten für Online-Marketing. Wir
+								steigern deine Bekanntheit und etablieren dich im Internet als
+								Marke auf deinem Fachgebiet. Mit authentischen Inhalten, die
+								Menschen emotional begeistern und an dich binden. Dein messbarer
+								und nachhaltiger Erfolg ist unser größtes Ziel. Dabei bedienen
+								wir dich neben klassischer Agenturarbeit mit modernsten Lösungen
+								wie Chatbots, Werbeanzeigen ohne Streuverlust und jede Menge
+								Automatismus für dein Geschäft
+								<div className="contact">
+									<a
+										className="contact__item"
+										href="https://www.heldenmacher.at"
+									>
+										Heldenmacher besuchen
+									</a>
+								</div>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div className="cell">
+					<div className="brand">
+						<div className="brand__inner">
+							<h2 className="brand__heading">
+								<img
+									className="brand__heading-logo"
+									src={MMLogo}
+									alt="Mutmacher Logo"
+								/>
+							</h2>
+							<p className="brand__content">
+								Die Mutmacher stellen dir Impulse, Tipps und Erfahrungsberichte
+								kostenlos zur Verfügung. Profitiere von Menschen, die
+								Situationen wie die deine schon erfolgreich gemeistert haben und
+								hole dir alles heraus was du benötigst um selbst mutiger zu
+								werden und (noch) bessere Entscheidungen treffen zu können.
+								<div className="contact">
+									<a className="contact__item" href="https://www.mutmacher.at">
+										Mutmacher besuchen
+									</a>
+								</div>
+							</p>
 						</div>
 					</div>
 				</div>

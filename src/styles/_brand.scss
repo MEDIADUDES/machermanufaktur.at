@@ -1,0 +1,122 @@
+$animationDuration: 0.8s;
+
+.brands .cell__inner {
+	padding: 0;
+}
+
+.brand {
+	position: relative;
+	transition: all $animationDuration;
+	width: 100%;
+	height: 100%;
+
+	&__inner {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	&__heading {
+		position: absolute;
+		transition: all $animationDuration;
+		display: flex;
+		flex-direction: column;
+		max-height: 40%;
+		width: 100%;
+		text-align: center;
+		transform: translateY(-25%);
+
+		@media screen and (max-width: 1024px) {
+			position: relative;
+			top: 30%;
+		}
+
+		@media screen and (max-width: 1024px) {
+			top: 15%;
+			//transform: translateY(75%);
+			transform: translateY(25%);
+		}
+
+		.cell:hover & {
+			transform: translateY(-70%);
+
+			@media screen and (max-width: 1024px) {
+				position: relative;
+				transform: translateY(0);
+				top: 0;
+			}
+		}
+
+		&-logo {
+			height: 20vh;
+			min-height: 130px;
+		}
+	}
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		visibility: hidden;
+		opacity: 0;
+		margin: 0 auto;
+		transition: all 0.8s;
+		font-size: 16px;
+		line-height: 1.5;
+		padding: 0 10%;
+		transform: scale(0.6);
+
+		@media screen and (max-width: 1024px) {
+			position: relative;
+			top: 25px;
+		}
+
+		.cell:hover & {
+			visibility: visible;
+			opacity: 1;
+			padding: 0 10%;
+			transform: scale(1);
+		}
+	}
+}
+
+@keyframes textMoveOut {
+	0% {
+		visibility: visible;
+		opacity: 1;
+		bottom: calc(50% - 14px);
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	100% {
+		visibility: hidden;
+		opacity: 0;
+		bottom: 70%;
+	}
+}
+
+@keyframes textMoveIn {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+		bottom: 70%;
+	}
+
+	10% {
+		opacity: 0;
+	}
+
+	100% {
+		visibility: visible;
+		opacity: 1;
+		bottom: calc(50% - 14px);
+	}
+}

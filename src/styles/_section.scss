@@ -46,6 +46,8 @@ $section-top-bottom-padding: rem-calc(40);
 		padding: 0;
 
 		.cell {
+			@include xy-cell($gutters: 0);
+
 			@include breakpoint(medium) {
 				@include xy-cell(50%, $gutters: 0);
 			}
