@@ -1,0 +1,77 @@
+{
+  "name": "machermanufaktur.at",
+  "description": "Website of MACHERMANUFAKTUR. Powered by GatsbyJS.",
+  "version": "0.1.0",
+  "author": "Simon Mayerhofer <simon@mayerhofer.at>",
+  "bugs": {
+    "url": "https://github.com/machermanufaktur/machermanufaktur.at/issues"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.19",
+    "@fortawesome/free-brands-svg-icons": "5.9.0",
+    "@fortawesome/free-regular-svg-icons": "5.9.0",
+    "@fortawesome/free-solid-svg-icons": "5.9.0",
+    "@fortawesome/react-fontawesome": "0.1.4",
+    "foundation-sites": "6.5.3",
+    "gatsby": "2.13.28",
+    "gatsby-image": "2.2.6",
+    "gatsby-plugin-feed": "2.3.4",
+    "gatsby-plugin-google-analytics": "2.1.4",
+    "gatsby-plugin-manifest": "2.2.3",
+    "gatsby-plugin-offline": "2.2.4",
+    "gatsby-plugin-react-helmet": "3.1.2",
+    "gatsby-plugin-sass": "2.1.3",
+    "gatsby-plugin-sharp": "2.2.8",
+    "gatsby-source-filesystem": "2.1.5",
+    "gatsby-transformer-sharp": "2.2.3",
+    "node-sass": "4.12.0",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-helmet": "5.2.1",
+    "typeface-roboto": "0.0.54",
+    "what-input": "5.2.3"
+  },
+  "devDependencies": {
+    "babel-preset-gatsby": "0.2.6",
+    "eslint": "6.0.1",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-loader": "2.2.1",
+    "eslint-plugin-import": "2.18.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.14.2",
+    "gatsby-plugin-eslint": "2.0.5",
+    "gatsby-plugin-stylelint": "3.2.0",
+    "prettier": "1.18.2",
+    "stylelint": "10.1.0",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-prettier": "5.2.0",
+    "stylelint-order": "3.0.1",
+    "stylelint-prettier": "1.1.1",
+    "stylelint-scss": "3.9.1",
+    "stylelint-webpack-plugin": "0.10.5"
+  },
+  "peerDependencies": {
+    "@reach/router": "^1.1.1"
+  },
+  "homepage": "https://www.machermanufaktur.at",
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machermanufaktur/machermanufaktur.at"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "dev": "npm run develop",
+    "format": "prettier --write ./**/*.{js,jsx,json,sass,scss,css}",
+    "fix": "eslint --fix . && stylelint --fix ./**/*.{scss,sass,css}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  }
+}

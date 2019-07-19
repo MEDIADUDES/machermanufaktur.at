@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+@import 'mixins/mixins';
+
+// All foundation styles.
+@include foundation-global-styles;
+@include foundation-typography;
+// @include foundation-table;
+@include foundation-visibility-classes;
+
+@import 'elements';
+
+.main-container {
+	@include xy-grid-container($global-width);
+
+	&--full-width {
+		@include xy-grid-container($padding: 0);
+	}
+}
+
+.main-grid {
+	@include xy-grid();
+}
+
+.main-content {
+	min-height: 300px;
+	padding: rem-calc(70 0);
+
+	@include xy-cell(full, $gutters: 0);
+
+	&--with-sidebar {
+		@include breakpoint(small) {
+			@include xy-cell(full, $gutters: 0);
+		}
+
+		@include breakpoint(medium) {
+			@include xy-cell(8, $gutter-position: right);
+		}
+	}
+}
