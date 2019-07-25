@@ -10,6 +10,14 @@ $animationDuration: 0.8s;
 	width: 100%;
 	height: 100%;
 
+	@media screen and (min-width: rem-calc(640px)) and (max-height: rem-calc(700px)) {
+		min-height: 700px;
+	}
+
+	@media screen and (min-width: rem-calc(1100px)) {
+		min-height: 600px;
+	}
+
 	&__inner {
 		position: absolute;
 		top: 0;
@@ -38,13 +46,23 @@ $animationDuration: 0.8s;
 		}
 
 		@media screen and (max-width: 1024px) {
-			top: 15%;
+			top: 10%;
 			//transform: translateY(75%);
 			transform: translateY(25%);
 		}
 
+		.cell:first-child & {
+			@media screen and (max-width: 1024px) {
+				transform: translateY(50%);
+			}
+
+			@media screen and (max-width: 760px) {
+				transform: translateY(75%);
+			}
+		}
+
 		.cell:hover & {
-			transform: translateY(-70%);
+			transform: translateY(-110%);
 
 			@media screen and (max-width: 1024px) {
 				position: relative;
@@ -74,6 +92,10 @@ $animationDuration: 0.8s;
 		@media screen and (max-width: 1024px) {
 			position: relative;
 			top: 25px;
+		}
+
+		@media screen and (min-width: 1025px) {
+			top: 45%;
 		}
 
 		.cell:hover & {
