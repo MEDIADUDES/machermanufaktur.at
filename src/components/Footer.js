@@ -1,27 +1,17 @@
 import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { Link } from 'gatsby';
 
 import './Footer.scss';
 
 const Footer = () => {
-	const { site } = useStaticQuery(graphql`
-		query LayoutQuery {
-			site {
-				siteMetadata {
-					author
-				}
-			}
-		}
-	`);
-
-	const { author } = site.siteMetadata;
-
 	return (
-		<footer className="Footer">
-			© {new Date().getFullYear()} {author}
-			<br />
-			<Link to="/impressum/">Impressum</Link> |{' '}
-			<Link to="/datenschutz/">Datenschutz</Link>
+		<footer className="[ section  section--splitted ] Footer">
+			<div className="cell">
+				<Link to="/impressum/">Impressum</Link>
+			</div>
+			<div className="cell dark">
+				<Link to="/datenschutz/">Datenschutzerklärung</Link>
+			</div>
 		</footer>
 	);
 };

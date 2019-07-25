@@ -1,0 +1,10 @@
+@import '../styles/mixins/mixins';
+
+.Header {
+	padding: rem-calc(15 10);
+	text-align: center;
+
+	&__logo {
+		max-width: 200px;
+	}
+}

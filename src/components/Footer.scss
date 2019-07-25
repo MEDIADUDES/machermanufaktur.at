@@ -2,5 +2,12 @@
 
 .Footer {
 	text-align: center;
-	padding: rem-calc(40 10);
+
+	.cell {
+		padding: rem-calc(10);
+	}
+
+	.cell.cell:last-child {
+		order: 0;
+	}
 }

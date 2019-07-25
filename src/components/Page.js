@@ -1,17 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SEO from './SEO';
+import Footer from './Footer';
+import Header from './Header';
 
-const Page = ({ children, title, description, lang, meta, containerClass }) => {
+const Page = ({
+	children,
+	title,
+	description,
+	lang,
+	meta,
+	containerClass,
+	hideHeader,
+}) => {
 	return (
 		<React.Fragment>
 			<SEO title={title} description={description} lang={lang} meta={meta} />
+
+			{hideHeader ? '' : <Header />}
 
 			<div className={`main-container ${containerClass}`}>
 				<div className="main-grid">
 					<main className="main-content">{children}</main>
 				</div>
 			</div>
+
+			<Footer />
 		</React.Fragment>
 	);
 };
@@ -23,6 +37,7 @@ Page.defaultProps = {
 	meta: [],
 	description: ``,
 	containerClass: '',
+	hideHeader: false,
 };
 
 Page.propTypes = {
@@ -32,4 +47,5 @@ Page.propTypes = {
 	lang: PropTypes.string,
 	meta: PropTypes.arrayOf(PropTypes.object),
 	containerClass: PropTypes.string,
+	hideHeader: PropTypes.bool,
 };

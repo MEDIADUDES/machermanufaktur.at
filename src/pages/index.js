@@ -14,6 +14,7 @@ const index = ({ data }) => {
 			title={data.site.siteMetadata.title}
 			description={data.site.siteMetadata.description}
 			containerClass="main-container--full-width"
+			hideHeader
 		>
 			<div className="[ section  section--full section--splitted ] intro">
 				<div className="cell">
@@ -25,6 +26,7 @@ const index = ({ data }) => {
 						/>
 					</div>
 				</div>
+
 				<div className="cell dark">
 					<div className="cell__inner">
 						Mit unseren beiden Marken Heldenmacher und Mutmacher bieten wir
@@ -46,6 +48,7 @@ const index = ({ data }) => {
 							>
 								office@machermanufaktur.at
 							</a>
+
 							<a className="contact__item" href="tel:004369919831028">
 								+43 699 19831028
 							</a>
@@ -65,6 +68,7 @@ const index = ({ data }) => {
 									alt="Heldenmacher Logo"
 								/>
 							</h2>
+
 							<p className="brand__content">
 								Die Heldenmacher sind deine Experten für Online-Marketing. Wir
 								steigern deine Bekanntheit und etablieren dich im Internet als
@@ -86,6 +90,7 @@ const index = ({ data }) => {
 						</div>
 					</div>
 				</div>
+
 				<div className="cell">
 					<div className="brand">
 						<div className="brand__inner">
@@ -96,6 +101,7 @@ const index = ({ data }) => {
 									alt="Mutmacher Logo"
 								/>
 							</h2>
+
 							<p className="brand__content">
 								Die Mutmacher stellen dir Impulse, Tipps und Erfahrungsberichte
 								kostenlos zur Verfügung. Profitiere von Menschen, die
